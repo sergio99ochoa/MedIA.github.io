@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Enfermedades Inteligente</title>
+
+    <!-- Incluir Google Fonts para la fuente Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img  style="width: 300px; border-radius: 10px;" src="https://vugravity.vteximg.com.br/arquivos/DALL%C2%B7E-2024-10-18-16.29.png" alt="MedIA">
+        <h1>Detector de Enfermedades Inteligente</h1>
+        <p>Ingresa tus síntomas:</p>
+        
+        <form id="sintomas-form">
+            <textarea id="input-sintomas" rows="5" placeholder="Ejemplo: me duele la cabeza, tengo náuseas"></textarea>
+            <button type="button" onclick="diagnosticar()">Diagnosticar</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <!-- El resultado aparecerá aquí -->
+        </div>
+    </div>
+
+    <!-- Incluir la biblioteca Fuse.js para coincidencias difusas -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+    <script src="script.js"></script>
+</body>
+</html>

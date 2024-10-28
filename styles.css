@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;  /* Usar Roboto como fuente principal */
+    background-image: url("https://vugravity.vteximg.com.br/arquivos/DALL·E-2024-10-18-16.29withblur.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 70px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+p {
+    font-weight: 400; /* Roboto con peso 400 para el texto normal */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+textarea {
+    width: 275px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-family: 'Roboto', sans-serif;  /* Asegurar que el textarea también use Roboto */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2acfcf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;  /* Fuente Roboto también en los botones */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f3e7;
+    border-left: 6px solid #4CAF50;
+    display: none; /* Ocultar por defecto */
+}
+
+.resultado p {
+    margin: 0;
+}
